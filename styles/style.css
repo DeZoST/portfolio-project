@@ -215,16 +215,20 @@ section{
 
 .about__skills-skills{
   margin-top: 10px;
+  margin-inline: auto;
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  justify-content: center;
 }
 
 .skills__skill{
   background-color: var(--clr-accent);
-  padding: 0.25rem 0.5rem;
+  padding: 0.25rem 1rem;
   border-radius: 5px;
+  font-weight: bold;
+  transition: all .3s;
+  cursor:default;
 }
 
 .about__content-title::after,
