@@ -152,6 +152,11 @@ section{
   text-decoration-color: var(--clr-secondary);
   text-underline-offset: 10px;
   text-decoration-thickness: 2px;
+  transition: all .3s;
+}
+
+.hero__content-name:hover{
+  scale: 1.05;
 }
 
 .hero__content-title{
@@ -177,13 +182,13 @@ section{
   text-align: center;
   font-size: var(--fs-2xl);
   margin-bottom: 2rem;
+  position: relative;
 }
 
 .about__informations-title{
   color: var(--clr-secondary);
   font-size: var(--fs-lg);
   text-align: center;
-  
 }
 
 .about__content-informations{
@@ -242,10 +247,48 @@ section{
   left: 50%;
   transform: translateX(-50%);
   border-radius: 5px;
+  top: calc(100% + 0.5rem);
 }
 
-.about__content-title::after{
-  top: calc(100% + 7.5rem);
+/* PROJECTS */
+
+.projects__content{
+  font-size: var(--fs-xs);
+}
+
+.projects__content-title{
+  position: relative;
+  text-transform: uppercase;
+  color: var(--clr-primary);
+  text-align: center;
+  font-size: var(--fs-2xl);
+}
+
+.projects__content-description{
+  margin-top: 2rem;
+  color: var(--clr-secondary);
+  text-align: center;
+  font-size: var(--fs-lg);
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.projects__row-content{
+  text-align: center;
+}
+
+.projects__row-title{
+  color: var(--clr-accent);
+  font-size: var(--fs-base);
+}
+
+.projects__row-btn{
+  margin-top: 0.5rem;
+  padding: 0.25rem 2rem;
+}
+
+.projects__row-img{
+  border-radius: 5px;
 }
 
 .hidden{

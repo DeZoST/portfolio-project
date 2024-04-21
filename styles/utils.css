@@ -96,10 +96,6 @@
     font-size: var(--fs-3xl);
   }
 
-  .about__content-title::after {
-    top: calc(100% + 8rem);
-  }
-
   .about__informations-title {
     font-size: var(--fs-xl);
   }
@@ -111,8 +107,25 @@
     gap: 0.75rem;
     max-width: 70%;
   }
-}
 
+  /* PROJECTS */
+
+  .projects__content{
+    font-size: var(--fs-sm);
+  }
+
+  .projects__content-title{
+    font-size: var(--fs-3xl);
+  }
+
+  .projects__content-description{
+    font-size: var(--fs-xl);
+  }
+
+  .projects__row-title{
+    font-size: var(--fs-lg);
+  }
+}
 /* md */
 @media (min-width: 768px) {
   .container {
@@ -167,9 +180,6 @@
   .about__content-title {
     font-size: var(--fs-4xl);
   }
-  .about__content-title::after {
-    top: calc(100% + 8.25rem);
-  }
 
   .about__informations-title, .about__skills-title {
     font-size: var(--fs-2xl);
@@ -178,6 +188,24 @@
   .about__informations-btn {
     padding: 0.5rem 1rem;
   }
+
+    /* PROJECTS */
+
+    .projects__content{
+      font-size: var(--fs-base);
+    }
+  
+    .projects__content-title{
+      font-size: var(--fs-4xl);
+    }
+  
+    .projects__content-description{
+      font-size: var(--fs-2xl);
+    }
+  
+    .projects__row-title{
+      font-size: var(--fs-xl);
+    }
 }
 
 /* xl */
@@ -185,6 +213,32 @@
   .container {
     max-width: 1280px;
   }
+
+    /* PROJECTS */
+
+    .projects__list-row{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .projects__row-img{
+      max-width: 60%;
+    }
+
+    .projects__row-description{
+      max-width: 70%;
+      margin-inline: auto;
+    }
+
+    .projects__row-content{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+    }
+
 }
 
 /* 2xl */
@@ -225,11 +279,25 @@
     font-size: var(--fs-5xl);
   }
 
-  .about__content-title::after{
-    top: calc(100% + 9rem);
-  }
-
   .about__informations-title, .about__skills-title{
     font-size: var(--fs-3xl);
   }
+
+    /* PROJECTS */
+
+    .projects__content{
+      font-size: var(--fs-lg);
+    }
+  
+    .projects__content-title{
+      font-size: var(--fs-5xl);
+    }
+  
+    .projects__content-description{
+      font-size: var(--fs-3xl);
+    }
+  
+    .projects__row-title{
+      font-size: var(--fs-2xl);
+    }
 }
